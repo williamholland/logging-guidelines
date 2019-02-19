@@ -53,6 +53,8 @@ an end-user. Information relating to time of execution of functionality as well
 as space usage should also be logged at an info level as it is of interest to
 an end-user.
 
+Any change to data or input to prevent an error should also be logged as info.
+
 #### User Story
 
 Terence produces report from a piece of software as part of his job. Terence
@@ -66,9 +68,6 @@ info log messages.
 
 Messages logged as warning are anything that should be brought to the attention
 of the software's administrator.
-
-Any change to data or input to prevent an error should also be logged as
-a warning.
 
 ### Error
 
