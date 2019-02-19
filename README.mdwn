@@ -72,8 +72,8 @@ of the software's administrator.
 
 ### Error
 
-Anything that deviates the expected behavior of the software should be logged as
-an error.
+Anything that deviates from the expected behavior of the software should be
+logged as an error.
 
 ## Future work for this repo
 
