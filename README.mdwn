@@ -47,6 +47,9 @@ an end-user.
 Messages logged as warning are anything that should be brought to the attention
 of the software's administrator.
 
+Any change to data or input to prevent an error should also be logged as
+a warning.
+
 ### Error
 
 Anything that deviates the expected behavior of the software should be logged as
