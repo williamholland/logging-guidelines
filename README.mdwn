@@ -57,7 +57,7 @@ Any change to data or input to prevent an error should also be logged as info.
 
 #### User Story
 
-Terence produces report from a piece of software as part of his job. Terence
+Terence produces reports from a piece of software as part of his job. Terence
 has experience developing software but did not write this particular tool and
 has never seen the source-code. One day after submitting a report, Terence's
 boss asks Terence why the software populated a particular part of the report
