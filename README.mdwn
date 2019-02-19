@@ -62,8 +62,7 @@ Terence produces reports from a piece of software as part of his job. Terence
 has experience developing software but did not write this particular tool and
 has never seen the source-code. One day after submitting a report, Terence's
 boss asks Terence why the software populated a particular part of the report
-the way it did. Terence should be able to answer this question by reading the
-info log messages.
+the way it did. Terence does not know the answer at first. Terence should be able to find the answer by reading the info log messages.
 
 ### Warning
 
