@@ -69,10 +69,14 @@ the way it did. Terence does not know the answer at first. Terence should be abl
 Messages logged as warning are anything that should be brought to the attention
 of the software's administrator.
 
+Action may not be required.
+
 ### Error
 
 Anything that deviates from the expected behavior of the software should be
 logged as an error.
+
+Action required to enable the software to function correctly.
 
 ## Future work for this repo
 
