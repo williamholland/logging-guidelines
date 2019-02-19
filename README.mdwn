@@ -52,7 +52,7 @@ of the software's administrator.
 Anything that deviates the expected behavior of the software should be logged as
 an error.
 
-## Future Work
+## Future work for this repo
 
 * Add appropriate licence
 * write RFC style breakdown (with MUST, SHOULD etc keywords) of each log level
