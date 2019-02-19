@@ -4,11 +4,11 @@ Guidelines for logging in software development.
 
 ## Overview
 
-As a software developer I have often wondered how much information to log, how
-much is too much, and at what level to log a given message. Therefore, I have
-aimed to design guidelines for a possible approach to logging. I acknowledge
-that the guidelines will not be necessary, possible or meaningful to implement
-for every project, they are designed predominantly around my experience in the
+As a software engineer I have often wondered how much information to log, how
+much is too much, and at what level to log a given message. Therefore, I 
+aim to create guidelines for a possible approach to logging. I acknowledge
+that the guidelines will not always be meaningful, necessary or possible to
+implement, they are designed predominantly around my experience in the
 financial sector.
 
 ## Log Levels
