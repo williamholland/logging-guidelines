@@ -36,6 +36,15 @@ execution.
 The reader should be able to isolate messages from any given thread in order of
 execution.
 
+#### User Story
+
+Doris is a developer in a bank. Software A is a piece of software that takes a
+data from a database as input, does some calculations and puts the result in a
+database. Doris must identify a bug in Software A running on a remote server.
+Doris only has access to the software's logs, the source-code and the input and
+output data. Doris has no shell access to the server. Doris should have enough
+information to identify the bug by reading the debug log messages.
+
 ### Info
 
 By reading info level logging, a person unfamiliar with the code should be able
@@ -43,6 +52,15 @@ to understand everything the program does at a level of abstraction familiar to
 an end-user. Information relating to time of execution of functionality as well
 as space usage should also be logged at an info level as it is of interest to
 an end-user.
+
+#### User Story
+
+Terence produces report from a piece of software as part of his job. Terence
+has experience developing software but did not write this particular tool and
+has never seen the source-code. One day after submitting a report, Terence's
+boss asks Terence why the software populated a particular part of the report
+the way it did. Terence should be able to answer this question by reading the
+info log messages.
 
 ### Warning
 
