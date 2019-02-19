@@ -29,9 +29,9 @@ guidelines.
 
 By reading debug level logging, a person who can see the code should be able to
 step through which lines were executed. It is not necessary to log every line
-of code executed, but it should be obvious which paths were taken when the code
-forks and the value of any input or external data which affect the path of
-execution.
+of code executed, but it should be obvious which nontrivial paths were taken
+when the code forks and the value of any input or external data which affect
+the path of execution.
 
 The reader should be able to isolate messages from any given thread in order of
 execution.
