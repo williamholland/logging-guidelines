@@ -1,0 +1,50 @@
+# Logging Guidelines
+
+Guidelines for logging in software development.
+
+## Overview
+
+As a software developer I have often wondered how much information to log, how
+much is too much, and at what level to log a given message. Therefore, I have
+aimed to design guidelines for a possible approach to logging. I acknowledge
+that the guidelines will not be necessary, possible or meaningful to implement
+for every project, they are designed predominantly around my experience in the
+financial sector.
+
+## Log Levels
+
+A widely used standard of logging levels is as follows
+
+1. debug
+2. info
+3. warning
+4. error
+
+Where each is a superset of those with higher numbers. Here we aim to provide a
+summary of the meaning of each level as understood in these guidelines.
+
+### Debug
+
+By reading debug level logging, a person who can see the code should be able to
+step through which lines were executed. It is not necessary to log every line
+of code executed, but it should be obvious which paths were taken when the code
+forks and the value of any input or external data which affect the path of
+execution.
+
+### Info
+
+By reading info level logging, a person unfamiliar with the code should be able
+to understand everything the program does at a level of abstraction familiar to
+an end-user. Information relating to time of execution of functionality as well
+as space usage should also be logged at an info level as it is of interest to
+an end-user.
+
+### Warning
+
+Messages logged as warning are anything that should be brought to the attention
+of the software's administrator.
+
+### Error
+
+Anything that deviates the expected behavior of the software should be logged as
+an error.
