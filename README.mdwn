@@ -20,8 +20,10 @@ A widely used standard of logging levels is as follows
 3. warning
 4. error
 
-Where each is a superset of those with higher numbers. Here we aim to provide a
-summary of the meaning of each level as understood in these guidelines.
+Where each is a superset of those with higher numbers so any given message
+should be logged only once at the highest applicable level. Here we aim to
+provide a summary of the meaning of each level as understood in these
+guidelines.
 
 ### Debug
 
