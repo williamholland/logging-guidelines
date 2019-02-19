@@ -47,11 +47,12 @@ information to identify the bug by reading the debug log messages.
 
 ### Info
 
-By reading info level logging, a person unfamiliar with the code should be able
-to understand everything the program does at a level of abstraction familiar to
-an end-user. Information relating to time of execution of functionality as well
-as space usage should also be logged at an info level as it is of interest to
-an end-user.
+By reading info level logging, a person familiar with the software but
+unfamiliar with the source-code of the software should be able to understand
+everything the program does at a level of abstraction familiar to an end-user.
+Information relating to time of execution of functionality as well as space
+usage should also be logged at an info level as it is of interest to an
+end-user.
 
 Any change to data or input to prevent an error should also be logged as info.
 
