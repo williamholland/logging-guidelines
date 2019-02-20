@@ -83,3 +83,4 @@ Action required to enable the software to function correctly.
 * Add appropriate licence
 * write RFC style breakdown (with MUST, SHOULD etc keywords) of each log level
 * wording of logging messages (should they be progressive tense? perfect tense?)
+* what not to log: sensitive information
