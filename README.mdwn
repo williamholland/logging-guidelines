@@ -84,3 +84,31 @@ Action required to enable the software to function correctly.
 * write RFC style breakdown (with MUST, SHOULD etc keywords) of each log level
 * wording of logging messages (should they be progressive tense? perfect tense?)
 * what not to log: sensitive information
+
+## Composing Log Messages
+
+### Error
+
+Error messages should be readable by a general audience as it is the highest
+level of logging. Any information relating to the error that is useful for a developer should be logged at debug level beforehand.
+
+It is recommended to log an error in the following format:
+
+    DEBUG "An error occurred [where] technical what, technical why, possible fix"
+    ERROR "general audience what - user impact"
+
+* "An error occurred" - literally these words so a developer knows this debug entry relates to the error following
+* where - where in the code (this may be handled by the logging framework being used) e.g. thread id, line of code, name of function, if using OOP it is useful to be able to identify the instance (an address in memory may suffice but often attributes that uniquely identify that class are more useful)
+* technical what - an explanation of what the error in terms most useful to a developer
+* technical why - an explanation of what caused the error in terms most useful to a developer
+* possible fix - often the developer who writes the code that catches the error is best placed to suggest what might have gone wrong and how that can be mitigated. If known add that information. If a developer later finds this error and determines a cause, it is encouraged they add this information too
+* general audience what - an explanation of what happened in very broad terms
+* user impact - an explanation of what the impact of this error is on the usage of this software
+
+If possible some ID that ties the debug information to the error would be
+useful in the case of multiple loggers writing to the same output they may
+become separated. Another idea would be to have 2 messages in any error record,
+one displayed to end users and one available to developers. A different error
+message could be logged when running the software with log level debug -
+however the original error should still be logged to ensure an error is being
+correctly reproduced.
