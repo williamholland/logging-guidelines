@@ -25,6 +25,20 @@ should be logged only once at the highest applicable level. Here we aim to
 provide a summary of the meaning of each level as understood in these
 guidelines.
 
+### Target Audience
+
+Before you start writing logging, consider who is the target audience for each
+level of logging. This will be different for a piece of software designed to
+run on a private server compared to a general audience desktop application or
+opensource commandline tool.
+
+Here are some suggestions
+
+* debug - this is for developers, this could be just yourself, a team within a company or the opensource community
+* info - for a commandline tool this level could be for everyone, for a desktop application this level may not be useful at all
+* warning - this could be for general users or for system administrators
+* error - in an application for general use this might be most useful for support. In general errors are very important to system administrators
+
 ### Debug
 
 By reading debug level logging, a person who can see the code should be able to
